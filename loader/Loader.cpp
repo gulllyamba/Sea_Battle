@@ -112,8 +112,7 @@ std::unique_ptr<Presenter> Loader::create_default_presenter() {
         *ship_dto_mapper_manager_,
         *ship_mapper_manager_
     );
-    state_service_->load_mission("/home/ilya/OOP/twenty_thread_atomic/laba3/loader/mission.yaml");
-    // state_service_->load_mission("mission.yaml");
+    state_service_->load_mission("mission.yaml");
 
     ship_catalog_ = std::make_unique<ShipCatalog>(std::make_unique<ShipFactoryManager>());
     weapon_catalog_ = std::make_unique<WeaponCatalog>(std::make_unique<WeaponFactoryManager>());
