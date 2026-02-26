@@ -3,13 +3,12 @@
 
 int main() {
     try {
-        std::ofstream file("/home/ilya/OOP_dop/time.txt");
+        std::ofstream file("filename.txt");
         if (!file.is_open()) {
             std::cerr << "Не удалось открыть файл!" << std::endl;
             throw;
         }
 
-        // for (int k = 0; k < 100; ++k) {
         for (size_t i = 100; i <= 2000; i += 100) {
             std::cout << "\nКоличество кораблей: " << i << "\n";
             {
@@ -111,7 +110,6 @@ int main() {
             }
             file << std::endl;
         }
-        // }
         file.close();
     }
     catch (const std::exception& e) {
