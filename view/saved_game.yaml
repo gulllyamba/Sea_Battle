@@ -1,0 +1,166 @@
+mission:
+  id: mission_001
+  commander:
+    fio: Иванов
+    rank: Полковник
+  total_budget: 150000
+  current_budget: 0
+  total_cargo: 3000
+  current_cargo: 3000
+  required_cargo_percentage: 75
+  max_convoy_ships: 5
+  max_pirate_ships: 5
+  base_a:
+    x: 0
+    y: 0
+  base_b:
+    x: 50
+    y: 0
+  base_size: 3
+  pirate_bases:
+    - position:
+        x: 15
+        y: -9
+      trigger_distance: 12
+      ship_count: 2
+      is_activated: false
+      is_defeated: false
+      spawned_pirate_ids: ~
+    - position:
+        x: 35
+        y: 4
+      trigger_distance: 7
+      ship_count: 2
+      is_activated: false
+      is_defeated: false
+      spawned_pirate_ids: ~
+  is_completed: false
+  is_successful: false
+convoy_ships:
+  - type: transport
+    id: B
+    name: Большой транспорт
+    captain:
+      fio: Майор Воронов
+      rank: Майор
+    max_speed: 20
+    current_speed: 0
+    cost: 30000
+    position:
+      x: -1.7707538458066092
+      y: 1.9799351698575549
+    max_health: 250
+    current_health: 250
+    is_alive: true
+    is_convoy: true
+    max_cargo: 1500
+    current_cargo: 1000
+    speed_reduction_factor: 0.10000000000000001
+  - type: transport
+    id: C
+    name: Большой транспорт
+    captain:
+      fio: Майор Воронов
+      rank: Майор
+    max_speed: 20
+    current_speed: 0
+    cost: 30000
+    position:
+      x: -0.17317548379638037
+      y: 2.3388318823843779
+    max_health: 250
+    current_health: 250
+    is_alive: true
+    is_convoy: true
+    max_cargo: 1500
+    current_cargo: 1000
+    speed_reduction_factor: 0.10000000000000001
+  - type: guard
+    id: D
+    name: Быстрый сторожевой
+    captain:
+      fio: Лейтенант Иванов
+      rank: Лейтенант
+    max_speed: 45
+    current_speed: 0
+    cost: 15000
+    position:
+      x: 2.9904352744793048
+      y: -1.3093678924656085
+    max_health: 100
+    current_health: 100
+    is_alive: true
+    is_convoy: true
+    max_cargo: 1500
+    current_cargo: 1000
+    speed_reduction_factor: 0.10000000000000001
+    weapons:
+      - place: bow
+        weapon:
+          type: gun
+          name: Средняя пушка
+          damage: 25
+          range: 8
+          fire_rate: 2
+          max_ammo: 100
+          current_ammo: 100
+          cost: 5000
+          accuracy: 0.80000000000000004
+          explosion_radius: 0
+      - place: stern
+        weapon:
+          type: rocket
+          name: Тяжелая ракета
+          damage: 50
+          range: 12
+          fire_rate: 1
+          max_ammo: 100
+          current_ammo: 100
+          cost: 10000
+          accuracy: 0.84999999999999998
+          explosion_radius: 1.5
+  - type: war
+    id: E
+    name: Тяжелый военный транспорт
+    captain:
+      fio: Майор Воронов
+      rank: Майор
+    max_speed: 22
+    current_speed: 0
+    cost: 45000
+    position:
+      x: -0.52034469900125524
+      y: 2.0718280449852422
+    max_health: 300
+    current_health: 300
+    is_alive: true
+    is_convoy: true
+    max_cargo: 1000
+    current_cargo: 1000
+    speed_reduction_factor: 0.14999999999999999
+    weapons:
+      - place: bow
+        weapon:
+          type: gun
+          name: Средняя пушка
+          damage: 25
+          range: 8
+          fire_rate: 2
+          max_ammo: 100
+          current_ammo: 100
+          cost: 5000
+          accuracy: 0.80000000000000004
+          explosion_radius: 0
+      - place: stern
+        weapon:
+          type: rocket
+          name: Тяжелая ракета
+          damage: 50
+          range: 12
+          fire_rate: 1
+          max_ammo: 100
+          current_ammo: 100
+          cost: 10000
+          accuracy: 0.84999999999999998
+          explosion_radius: 1.5
+pirate_ships: ~
