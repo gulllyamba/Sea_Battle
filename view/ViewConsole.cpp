@@ -49,7 +49,6 @@ void ViewConsole::save_or_new_game() {
             return;
         }
         case 2: {
-            // presenter_->load_game("/home/ilya/OOP/twenty_thread_atomic/laba3/view/saved_game.yaml");
             presenter_->load_game("saved_game.yaml");
             auto ships = presenter_->get_convoy_ships();
             std::string max_char = "A";
@@ -221,7 +220,6 @@ void ViewConsole::purchase_ships() {
                 }
             }
             case 0: {
-                // presenter_->save_game("/home/ilya/OOP/twenty_thread_atomic/laba3/view/saved_game.yaml");
                 presenter_->save_game("saved_game.yaml");
                 break;
             }
@@ -378,8 +376,7 @@ void ViewConsole::load_ships() {
                 }
             }
             case 0: {
-                presenter_->save_game("/home/ilya/OOP/twenty_thread_atomic/laba3/view/saved_game.yaml");
-                // presenter_->save_game("saved_game.yaml");
+                presenter_->save_game("saved_game.yaml");
                 break;
             }
         }
@@ -588,8 +585,7 @@ void ViewConsole::purchase_weapons() {
                 return;
             }
             case 0: {
-                presenter_->save_game("/home/ilya/OOP/twenty_thread_atomic/laba3/view/saved_game.yaml");
-                // presenter_->save_game("saved_game.yaml");
+                presenter_->save_game("saved_game.yaml");
                 break;
             }
         }
