@@ -1,0 +1,38 @@
+mission:
+  id: "mission_001"
+  commander:
+    fio: "Иванов"
+    rank: "Полковник"
+  total_budget: 150000.0
+  current_budget: 150000.0
+  total_cargo: 3000.0
+  current_cargo: 0.0
+  required_cargo_percentage: 75.0
+  max_convoy_ships: 5
+  max_pirate_ships: 5
+  base_a:
+    x: 0.0
+    y: 0.0
+  base_b:
+    x: 50.0
+    y: 0.0
+  base_size: 3.0
+  pirate_bases:
+    - position:
+        x: 15.0
+        y: -9.0
+      trigger_distance: 12.0
+      ship_count: 2
+      is_activated: false
+      is_defeated: false
+      spawned_pirate_ids: []
+    - position:
+        x: 35.0
+        y: 4.0
+      trigger_distance: 7.0
+      ship_count: 2
+      is_activated: false
+      is_defeated: false
+      spawned_pirate_ids: []
+  is_completed: false
+  is_successful: false
